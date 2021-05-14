@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - SB Admin v6.0.3 (https://startbootstrap.com/template/sb-admin)
-* Copyright 2013-2021 Start Bootstrap
+* Bếp Phượt - SB Admin v6.0.3 (https://startbootstrap.com/template/sb-admin)
+* Copyright 2013-2021 Bếp Phượt
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
 */
 /*!
@@ -3981,6 +3981,15 @@ input[type=button].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.navbar-brand-logo {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
