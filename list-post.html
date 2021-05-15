@@ -98,81 +98,69 @@
                             <li class="breadcrumb-item active">Bài Viết</li>
                             <li class="breadcrumb-item"><a href="#">Danh Sách</a></li>
                         </ol>
-                        <section>
-                            <div class="col-12">
-                                <div class="card">
-                                    <!-- /.card-header -->
-                                    <div class="card-body">
-                                        <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                                            <!-- <div class="row">
-                                                <div class="col-sm-12 col-md-6"></div>
-                                                <div class="col-sm-12 col-md-6"></div>
-                                            </div> -->
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
-                                                        <thead>
-                                                            <tr role="row">
-                                                                <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">STT</th>
-                                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Ảnh</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Tiêu đề</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">View</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Chuyên mục</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Ngươi tạo</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Ngày đăng</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Sửa</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Xóa</th>
-                                                                
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>
-                                                                    hình ảnh
-                                                                </td>
-                                                                <td>
-                                                                    Sửa lỗi không vào được game trong Đấu Trường Chân Lý (ĐTCL)
-                                                                </td>
-                                                                <td>
-                                                                    1
-                                                                </td>
-                                                                <td>
-                                                                    Thể thao
-                                                                </td>
-                                                                <td>
-                                                                    admin
-                                                                </td>
-                                                                <td>
-                                                                    19/02/2020
-                                                                </td>
-                                                                <td style="text-align: center;">
-                                                                    <span class="badge bg-primary">
-                                                                        <a href="">
-                                                                            <ion-icon name="create-outline"></ion-icon>
-                                                                        </a>
-                                                                    </span>
-                                                                    
-                                                                </td>
-                                                                <td style="text-align: center;">
-                                                                    <span class="badge bg-danger">
-                                                                        <a href="">
-                                                                            <ion-icon name="trash-outline"></ion-icon>
-                                                                        </a>
-                                                                    </span>
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                                    <!-- /.card-body -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table mr-1"></i>
+                                Danh sách bài viết
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Ảnh</th>
+                                                <th>Tiêu đề</th>
+                                                <th>Chuyên mục</th>
+                                                <th>View</th>
+                                                <th>Người tạo</th>
+                                                <th>Ngày đăng</th>
+                                                <th>Sửa</th>
+                                                <th>Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Ảnh</th>
+                                                <th>Tiêu đề</th>
+                                                <th>View</th>
+                                                <th>Chuyên mục</th>
+                                                <th>Người tạo</th>
+                                                <th>Ngày đăng</th>
+                                                <th>Sửa</th>
+                                                <th>Xóa</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Hình Ảnh</td>
+                                                <td>Làm món abc</td>
+                                                <td>1</td>
+                                                <td>công thức</td>
+                                                <td>admin 1</td>
+                                                <td>15/05/2021</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
