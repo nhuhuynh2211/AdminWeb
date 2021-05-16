@@ -43,12 +43,10 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="index.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Trang Chủ
                             </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Chuyên Mục
@@ -91,81 +89,406 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="content-wrapper" style="min-height: 1203.6px;">
-                        <section class="content-header">
-                            <div class="container-fluid">
-                                <div class="row mb-2">
-                                    <div class="col-sm-6">
-                                        <h1>Danh sách chuyên mục</h1>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ol class="breadcrumb float-sm-right">
-                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                            <li class="breadcrumb-item active">Danh sách chuyên mục</li>
-                                        </ol>
-                                    </div>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Danh Sách Chuyên Mục</h1>
+                        <ol class="breadcrumb mb-g4">
+                            <li class="breadcrumb-item active">Trang chủ</li>
+                            <li class="breadcrumb-item active">Chuyên Mục</li>
+                            <li class="breadcrumb-item"><a href="#">Danh Sách</a></li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table mr-1"></i>
+                                Danh sách chuyên mục
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Mã ID</th>
+                                                <th>Tên Chuyên Mục</th>
+                                                <th>Sửa</th>
+                                                <th>Xóa</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Mã ID</th>
+                                                <th>Tên Chuyên Mục</th>
+                                                <th>Sửa</th>
+                                                <th>Xóa</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>101</td>
+                                                <td>Công thức thức uống</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>102</td>
+                                                <td>Công thức khai vị</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>103</td>
+                                                <td>Công thức món mặn</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>104</td>
+                                                <td>Công thức tráng miệng</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>105</td>
+                                                <td>Công thức đồ ăn vặt</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>106</td>
+                                                <td>Công thức thức nước chấm</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>107</td>
+                                                <td>Công thức nước chấm</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>201</td>
+                                                <td>Ẩm thực ba miền</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>202</td>
+                                                <td>Món ngon ngày tết</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>203</td>
+                                                <td>Mâm cơm gia đình</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>204</td>
+                                                <td>Tráng miệng</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>205</td>
+                                                <td>Thức uống</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>301</td>
+                                                <td>Khéo tay hay làm</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>302</td>
+                                                <td>Mẹo vặt nhà bếp</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>303</td>
+                                                <td>Sức khỏe gia đình</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>401</td>
+                                                <td>Dinh dưỡng bà bầu</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>17</td>
+                                                <td>402</td>
+                                                <td>Dinh dưỡng cho bé</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>18</td>
+                                                <td>403</td>
+                                                <td>Mẹo vặt hữu ích</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>19</td>
+                                                <td>501</td>
+                                                <td>Quán ngon</td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a href="">
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <span class="badge bg-danger">
+                                                        <a href="">
+                                                            <ion-icon name="trash-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                        </section>
-                        <section>
-                            <div class="col-12">
-                                <div class="card">
-                                    <!-- /.card-header -->
-                                    <div class="card-body">
-                                        <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-6"></div>
-                                                <div class="col-sm-12 col-md-6"></div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
-                                                        <thead>
-                                                            <tr role="row">
-                                                                <th class="sorting_asc" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">STT</th>
-                                                                <th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending">Tên chuyên mục</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending">Sửa</th>
-                                                                <th style="text-align: center;" class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending">Xóa</th>
-                    
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                    
-                                                            <tr role="row" class="odd">
-                                                                <td class="sorting_1">1</td>
-                                                                <td>Đời sống</td>
-                                                                <td style="text-align: center;">
-                                                                    <span class="badge bg-primary">
-                                                                                <ion-icon name="create-outline"></ion-icon>
-                                                                            </span>
-                    
-                                                                </td>
-                                                                <td style="text-align: center;">
-                                                                    <span class="badge bg-danger">
-                                                                                <ion-icon name="trash-outline"></ion-icon>
-                                                                            </span>
-                                                                </td>
-                                                            </tr>
-                    
-                                                        </tbody>
-                                                        <tfoot>
-                                                            <tr>
-                                                                <th rowspan="1" colspan="1">STT</th>
-                                                                <th rowspan="1" colspan="1">Tên chuyên mục</th>
-                                                                <th rowspan="1" colspan="1">Sửa</th>
-                                                                <th rowspan="1" colspan="1">Xóa</th>
-                                                            </tr>
-                                                        </tfoot>
-                                                    </table>
-                                                </div>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                                    <!-- /.card-body -->
-                                </div>
-                            </div>
-                        </section>
+                        </div>
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
