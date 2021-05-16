@@ -6119,7 +6119,7 @@ a.close.disabled {
 }
 
 .bg-mystyle {
-  background: url('https://pixabay.com/get/gf677be4167bd8ed12f498db76f2bbf1c51e7027908312d74bd4b0060c76aa0ce1d5c3f40a06a152050f24463c63f73ca_1280.jpg');
+  background: url("../assets/img/img_mystyle.jpg");
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10361,19 +10361,19 @@ body {
 }
 
 .bg-login-image {
-  background: url("https://pixabay.com/get/ga562a47acd50dcb7bb8c1ec96508f3cfddf39775c069c80686e2c05a989f3abe80a83dfd5655d0195bf61cec5f833443_640.jpg");
+  background: url("../assets/img/img_login.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://pixabay.com/get/g03abb7b7cef2cc72e18c7bb4dc92beda42fc60b009249e3f0647b2c78b81a401892a3d3995535437e7877acfbb72dfe6_1280.jpg");
+  background: url("../assets/img/img_register.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://pixabay.com/get/gfce6a4a33f94fa78e63a7c15a2c23faaa1aede7c2920246fa70b81d2321e84e997173cfe4457a9d4140226f55c87b474_1280.jpg");
+  background: url("../assets/img/img_password.jpg");
   background-position: center;
   background-size: cover;
 }
