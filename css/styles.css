@@ -1992,9 +1992,9 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #f17971;
+  border-color: #3b3b3b;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(231, 43, 43, 0.644);
+  box-shadow: 0 0 0 0.2rem rgba(133, 133, 133, 0.1);
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
@@ -4456,6 +4456,58 @@ input[type=button].btn-block {
 .card-img-bottom {
   flex-shrink: 0;
   width: 100%;
+}
+
+
+.card-user .card-img {
+  height: 110px;
+}
+.card .card-image {
+  width: 100%;
+  overflow: hidden;
+  height: 260px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.card-user .avatar.border-gray {
+  border-color: #EEEEEE;
+}
+.card-user .avatar {
+  width: 124px;
+  height: 124px;
+  border: 5px solid #FFFFFF;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.card .avatar {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.card .author {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.media-post .author {
+  width: 20%;
+  float: none !important;
+  display: block;
+  margin: 0 auto 10px;
+}
+.card-user .author {
+  text-align: center;
+  text-transform: none;
+  margin-top: -70px;
+}
+.card-user .avatar.border-gray {
+  border-color: #EEEEEE;
 }
 
 .card-img,
