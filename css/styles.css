@@ -6170,7 +6170,26 @@ a.close.disabled {
   background-color: #007bff !important;
   
 }
-
+.overview-item--c1 {
+  background-image: -moz-linear-gradient(90deg,#3f5efb 0%,#fc466b 100%);
+  background-image: -webkit-linear-gradient(90deg,#3f5efb 0%,#fc466b 100%);
+  background-image: -ms-linear-gradient(90deg,#3f5efb 0%,#fc466b 100%);
+}
+.overview-item--c2 {
+  background-image: -moz-linear-gradient(90deg,#01dbdf 0%,#3f5efb 100%);
+  background-image: -webkit-linear-gradient(90deg,#01dbdf 0%,#3f5efb 100%);
+  background-image: -ms-linear-gradient(90deg,#01dbdf 0%,#3f5efb 100%);
+}
+.overview-item--c3 {
+  background-image: -moz-linear-gradient(90deg,#e8fb3f 0%,#11998e 100%);
+  background-image: -webkit-linear-gradient(90deg,#e8fb3f 0%,#11998e 100%);
+  background-image: -ms-linear-gradient(90deg,#e8fb3f 0%,#11998e 100%);
+}
+.overview-item--c4 {
+  background-image: -moz-linear-gradient(90deg,#ee0979 0%,#ffae00 100%);
+  background-image: -webkit-linear-gradient(90deg,#ee0979 0%,#ffae00 100%);
+  background-image: -ms-linear-gradient(90deg,#ee0979 0%,#ffae00 100%);
+}
 .bg-mystyle {
   background: url('../assets/img/img_mystyle.jpg');
 }
