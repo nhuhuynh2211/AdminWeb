@@ -40,7 +40,7 @@
                 <a class="nav-link dropdown-toggle" id="userDropdown" href="#!" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="profile.html">
+                    <a class="dropdown-item" href="profile.php">
                         <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                         Thông tin
                     </a>
@@ -49,7 +49,7 @@
                         Cài đặt
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="login.html">
+                    <a class="dropdown-item" href="logout.php">
                         <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                         Đăng xuất
                     </a>

@@ -1,31 +1,5 @@
 <?php
-    session_start();
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "themxoasuaadmin";
-  
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    mysqli_set_charset($conn,'utf8');
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-    
-    $tendn=$_GET["tendn"];
-    $pass=$_GET["pass"];
-    
-    $pass=md5($pass);
-    $sql = "SELECT * from admin where tendn = '$tendn' and pass = '$pass' ";
-
-    $admin = mysqli_query($conn,$sql);
-    if (mysqli_num_rows($admin) == 1)
-    {
-        
-    }
-     // $conn->close();
-    
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,11 +33,11 @@
         </div>
       </form>
       <td style="text-align: center;">
-                <span class="badge bg-danger">
-                    <a  style="color:white" href="login.html">Log in
-                    </a>
-                </span>
-            </td>
+        <span class="badge bg-danger">
+            <a  style="color:white" href="login.html">Log in
+            </a>
+        </span>
+    </td>
       <!-- Navbar-->
       <ul class="navbar-nav ml-auto ml-md-0">
         <li class="nav-item dropdown no-arrow">
@@ -174,29 +148,7 @@
                           </div>
                         </div>
                       </div>
-                      <?php    
-                      $sql = "SELECT * from admin where tendn='$tendn' "; //câu lệnh SQL
-
-                      $result = $conn->query($sql);
-
-                      if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-
-                          $_SESSION["id"]=$row["id"];
-                          $_SESSION["tendn"]=$row["tendn"];
-                          $_SESSION["tendd"]=$row["tendd"];
-                          $_SESSION["quyen"]=$row["quyen"];
-                          $_SESSION["email"]=$row["email"];
-                          $_SESSION["dienthoai"]=$row["dienthoai"];
-                          $_SESSION["diachi"]=$row["diachi"];
-                          $_SESSION["ngaysinh"]=$row["ngaysinh"];
-                          $_SESSION["gioitinh"]=$row["gioitinh"];
-                          $_SESSION["dantoc"]=$row["dantoc"];
-                          $_SESSION["gioithieu"]=$row["gioithieu"];
-                    
-                        ?>
-                        
+                     
                       <div class="col-md-8">
                         <div class="card mb-3">
                           <div class="card-body">
@@ -205,7 +157,7 @@
                                 <h6 class="mb-0">Tên đăng nhập</h6>
                               </div>
                               <div class="col-sm-9 text-secondary">
-                                  <?php echo $row["tendn"]; ?>
+                                <?php echo $_SESSION["tendn"]; ?>
                               </div>
                             </div>
                             <hr />
@@ -214,7 +166,7 @@
                                 <h6 class="mb-0">Họ tên</h6>
                               </div>
                               <div class="col-sm-9 text-secondary">
-                              <?php echo $row["tendd"]; ?>
+                                <?php echo $_SESSION["tendd"]; ?>
                               </div>
                             </div>
                             <hr />
@@ -222,8 +174,8 @@
                               <div class="col-sm-3">
                                 <h6 class="mb-0">Email</h6>
                               </div>
-                              <div class="col-sm-9 text-secondary">
-                              <?php echo $row["email"]; ?>
+                              <div class="col-sm-9 text-secondary"> 
+                              <?php echo $_SESSION["email"]; ?>
                               </div>
                             </div>
                             <hr />
@@ -232,7 +184,8 @@
                                 <h6 class="mb-0">Số điện thoại</h6>
                               </div>
                               <div class="col-sm-9 text-secondary">
-                                  <?php echo $row["dienthoai"]; ?></div>
+                              <?php echo $_SESSION["dienthoai"]; ?>
+                              </div>
                             </div>
                             <hr />
                             <div class="row">
@@ -240,7 +193,7 @@
                                 <h6 class="mb-0">Địa chỉ</h6>
                               </div>
                               <div class="col-sm-9 text-secondary">
-                              <?php echo $row["diachi"]; ?>
+                              <?php echo $_SESSION["diachi"]; ?>
                               </div>
                             </div>
                             <hr />
@@ -248,21 +201,27 @@
                               <div class="col-sm-3">
                                 <h6 class="mb-0">Ngày sinh</h6>
                               </div>
-                              <div class="col-sm-9 text-secondary"><?php echo $row["ngaysinh"]; ?></div>
+                              <div class="col-sm-9 text-secondary">
+                              <?php echo $_SESSION["ngaysinh"]; ?>
+                              </div>
                             </div>
                             <hr />
                             <div class="row">
                               <div class="col-sm-3">
                                 <h6 class="mb-0">Giới tính</h6>
                               </div>
-                              <div class="col-sm-9 text-secondary"><?php echo $row["gioitinh"]; ?></div>
+                              <div class="col-sm-9 text-secondary">
+                              <?php echo $_SESSION["gioitinh"]; ?>
+                              </div>
                             </div>
                             <hr />
                             <div class="row">
                               <div class="col-sm-3">
                                 <h6 class="mb-0">Dân tộc</h6>
                               </div>
-                              <div class="col-sm-9 text-secondary"><?php echo $row["dantoc"]; ?></div>
+                              <div class="col-sm-9 text-secondary">
+                              <?php echo $_SESSION["dantoc"]; ?>
+                              </div>
                             </div>
                             <hr />
                             <div class="row">
@@ -270,11 +229,9 @@
                                 <h6 class="mb-0">Giới thiệu</h6>
                               </div>
                               <div class="col-sm-9 text-secondary">
-                              <?php echo $row["gioithieu"]; ?>
+                              <?php echo $_SESSION["gioithieu"]; ?>
                               </div>
                             </div>
-                      
-                         <?php } } ?>
                             <hr />
                             <div class="row">
                               <div class="col-sm-12">
